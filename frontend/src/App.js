@@ -1,0 +1,23 @@
+import React from 'react';
+import FeedbackForm from './components/FeedbackForm';
+import FeedbackList from './components/FeedbackList';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="container mx-auto px-4">
+        <h1 className="text-3xl font-bold text-center mb-8">Driver Feedback System</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <FeedbackForm />
+          </div>
+          <div>
+            <FeedbackList />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
